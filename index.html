@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Auto Export | Used & New Cars Supplier</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            color: #333;
+            line-height: 1.6;
+        }
+        /* 导航栏 */
+        nav {
+            background-color: #0f2b48;
+            color: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top:0;
+            z-index: 99;
+        }
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .nav-links a{
+            color:#fff;
+            text-decoration:none;
+            margin-left:24px;
+        }
+        .nav-links a:hover{
+            color:#ff7800;
+        }
+        /* 首页横幅 */
+        .hero{
+            background:#183b61;
+            color:white;
+            padding:80px 5%;
+            text-align:center;
+        }
+        .hero h1{
+            font-size:42px;
+            margin-bottom:16px;
+        }
+        .hero p{
+            font-size:18px;
+            max-width:700px;
+            margin:0 auto 30px;
+        }
+        .btn{
+            background:#ff7800;
+            color:white;
+            padding:14px 32px;
+            text-decoration:none;
+            border-radius:4px;
+            display:inline-block;
+            font-weight:bold;
+        }
+        .btn:hover{
+            background:#e06b00;
+        }
+        /* 通用区块 */
+        .section{
+            padding:60px 5%;
+        }
+        .section-title{
+            text-align:center;
+            font-size:32px;
+            margin-bottom:40px;
+            color:#0f2b48;
+        }
+        /* 产品展示 */
+        .product-wrap{
+            display:grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+            gap:24px;
+        }
+        .product-card{
+            border:1px solid #ddd;
+            border-radius:8px;
+            overflow:hidden;
+            transition: 0.3s;
+        }
+        .product-card:hover{
+            box-shadow: 0 4px 12px #00000022;
+        }
+        .product-img{
+            height:180px;
+            background:#cccccc;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            color:#666;
+        }
+        .product-info{
+            padding:16px;
+        }
+        .product-info h3{
+            margin-bottom:8px;
+        }
+        /* 关于我们 */
+        .about{
+            background:#f5f7fa;
+        }
+        /* 联系表单 */
+        .contact-form{
+            max-width:600px;
+            margin:0 auto;
+        }
+        .form-item{
+            margin-bottom:16px;
+        }
+        input,textarea{
+            width:100%;
+            padding:12px;
+            border:1px solid #ccc;
+            border-radius:4px;
+            font-size:16px;
+        }
+        textarea{
+            min-height:140px;
+        }
+        .submit-btn{
+            background:#0f2b48;
+            color:white;
+            border:none;
+            padding:14px 30px;
+            cursor:pointer;
+            font-size:16px;
+            width:100%;
+        }
+        .submit-btn:hover{
+            background:#173b61;
+        }
+        .tip-success{
+            color:#208030;
+            text-align:center;
+            margin-top:12px;
+            display:none;
+        }
+        /* 页脚 */
+        footer{
+            background:#0f2b48;
+            color:white;
+            text-align:center;
+            padding:30px 5%;
+        }
+    </style>
+</head>
+<body>
+    <!--导航-->
+    <nav>
+        <div class="logo">GLOBAL AUTO EXPORT</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!--首页banner-->
+    <section class="hero" id="home">
+        <h1>Reliable China Car Exporter</h1>
+        <p>Supply brand‑new & used vehicles, support worldwide shipping. We provide one‑stop export service for global dealers and buyers.</p>
+        <a href="#contact" class="btn">Get A Quote</a>
+    </section>
+
+    <!--产品展示-->
+    <section class="section" id="products">
+        <h2 class="section-title">Our Hot Selling Cars</h2>
+        <div class="product-wrap">
+            <div class="product-card">
+                <div class="product-img">Car Image Placeholder</div>
+                <div class="product-info">
+                    <h3>Sedan Series</h3>
+                    <p>Popular fuel & electric sedans, stable quality, competitive price.</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">Car Image Placeholder</div>
+                <div class="product-info">
+                    <h3>SUV Series</h3>
+                    <p>Multiple sizes EV & fuel SUV, large stock for fast delivery.</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">Car Image Placeholder</div>
+                <div class="product-info">
+                    <h3>New Energy EV</h3>
+                    <p>Chinese brand electric vehicles, low‑cost new energy cars.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--关于我们-->
+    <section class="section about" id="about">
+        <h2 class="section-title">About Us</h2>
+        <div style="max-width:800px;margin:0 auto;font-size:17px;">
+            <p>We are a professional automobile export company based in China. We focus on supplying new cars, used cars and new‑energy vehicles for overseas clients. We handle vehicle inspection, document preparation, container loading and international shipping. We have rich experience serving dealers, wholesalers and individual buyers all over the world.</p>
+            <br>
+            <p>Our advantage: Rich vehicle source, complete export documents, reasonable price, reliable logistics channel.</p>
+        </div>
+    </section>
+
+    <!--联系我们-->
+    <section class="section" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-form">
+            <!-- ============ 这里后续替换成你的Formspree表单地址 ============ -->
+            <form action="替换成你的formspree地址" method="POST">
+                <div class="form-item">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-item">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-item">
+                    <input type="text" name="whatsapp" placeholder="WhatsApp / Phone">
+                </div>
+                <div class="form-item">
+                    <textarea name="message" placeholder="Tell us your demand: car model, quantity, target country..." required></textarea>
+                </div>
+                <button class="submit-btn" type="submit">Send Inquiry</button>
+            </form>
+            <div class="tip-success">✅ Message sent successfully, we will reply you soon.</div>
+        </div>
+        <div style="text-align:center;margin-top:30px;">
+            <p>WhatsApp: +86‑XXX‑XXXXXXX</p>
+            <p>Email: info@globalautoexport.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Global Auto Export. All Rights Reserved.</p>
+    </footer>
+
+<script>
+//表单提交成功提示
+const form = document.querySelector('form');
+const successTip = document.querySelector('.tip-success');
+form.addEventListener('submit',function(){
+    setTimeout(()=>{
+        form.style.display='none';
+        successTip.style.display='block';
+    },600);
+})
+</script>
+</body>
+</html>
